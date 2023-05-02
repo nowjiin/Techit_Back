@@ -1,5 +1,7 @@
-def angled_triangle(triangle):
+def angled_triangle():
     while True:
+        triangle = list(map(int, input().split()))
+        triangle.sort()
         if 0 in triangle:
             break
 
@@ -8,6 +10,4 @@ def angled_triangle(triangle):
         else:
             print("직각 삼각형이 아닙니다")
 
-tri_len = list(map(int, input().split()))
-tri_len.sort()
-angled_triangle(tri_len)
+angled_triangle()
